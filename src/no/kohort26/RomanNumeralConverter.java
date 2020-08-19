@@ -1,5 +1,9 @@
 package no.kohort26;
 
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
 public class RomanNumeralConverter {
 
     /*  Roman Numerals for Reference
@@ -18,5 +22,10 @@ public class RomanNumeralConverter {
         String te = tens[(number % 100) / 10];
         String on = ones[number % 10];
         return th + hu + te + on;
+    }
+    @Test
+
+    void shouldConvert1ToI() {
+        assertEquals("I", toRoman(1));
     }
 }
