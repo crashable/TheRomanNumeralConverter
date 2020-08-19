@@ -23,9 +23,45 @@ public class RomanNumeralConverter {
         String on = ones[number % 10];
         return th + hu + te + on;
     }
-    @Test
 
+    @Test
     void shouldConvert1ToI() {
         assertEquals("I", toRoman(1));
+    }
+    @Test
+    void shouldConvert2ToII() {
+        assertEquals("II", toRoman(2));
+    }
+    @Test
+    void shouldConvert3toIII() {
+        assertEquals("III", toRoman(3));
+    }
+    @Test
+    void shouldConvert4toIV() {
+        assertEquals("IV", toRoman(4));
+    }
+    @Test
+    void shouldConvert5toV() {
+        assertEquals("V", toRoman(5));
+    }
+    @Test
+    void shouldConvert6ToVI() {
+        assertEquals("VI", toRoman(6));
+    }
+    @Test
+    void shouldConvert7ToVII() {
+        assertEquals("VII", toRoman(7));
+    }
+    @Test
+    void shouldConvert8ToVIII() {
+        assertEquals("VIII", toRoman(8));
+    }
+    @Test
+    void shouldConvert9ToIX() {
+        assertEquals("IX", toRoman(9));
+    }
+    @Test
+    void shouldConvert10ToX() {
+        assertEquals("X", toRoman(10));
     }
 }
