@@ -25,7 +25,7 @@ public class RomanNumeralConverter {
     }
     @Test
 
-    void thisIsATestToRomanThatIsVeryGreen() {
+    void thisIsATestToRomanThatIsVeryGreenAndCool() {
         assertEquals("I", toRoman(1));
     }
 }
